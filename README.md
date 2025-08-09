@@ -53,7 +53,6 @@ retail-analytics-sql-python/
 ![Monthly AOV](dashboards/monthly_aov.png)
 
 ## Results (Executive Summary)
-Replace the bracketed parts with what you observe:
 - **Total revenue (period):** €1 336
 - **Max MoM:** +383% in Mar 2024
 - **Top products:** Laptop 13", Monitor 24", Keyboard
