@@ -69,7 +69,7 @@ erDiagram
     REAL unit_price
   }
 
-```md
+```
 
 ## KPIs implemented
 1. **Monthly Revenue**  
