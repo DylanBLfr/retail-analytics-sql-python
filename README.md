@@ -34,6 +34,36 @@ retail-analytics-sql-python/
 ├─ requirements.txt
 └─ retail.db              # local SQLite DB (ignored by .gitignore)
 ```
+## Data model (ERD)
+
+```mermaid
+erDiagram
+  CUSTOMERS {
+    INT customer_id PK
+    DATE signup_date
+    TEXT country
+  }
+  PRODUCTS {
+    INT product_id PK
+    TEXT product_name
+    TEXT category
+    REAL unit_price
+  }
+  ORDERS {
+    INT order_id PK
+    INT customer_id FK
+    DATE order_date
+  }
+  ORDER_ITEMS {
+    INT order_item_id PK
+    INT order_id FK
+    INT product_id FK
+    INT quantity
+    REAL unit_price
+  }
+  CUSTOMERS ||--o{ ORDERS : places
+  ORDERS ||--|{ ORDER_ITEMS : contains
+  PRODUCTS ||--o{ ORDER_ITEMS : includes
 
 ## KPIs implemented
 1. **Monthly Revenue**  
