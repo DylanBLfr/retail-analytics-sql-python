@@ -1,3 +1,4 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 # Retail Analytics — SQL + Python
 
 Hands-on analytics project to showcase what I learned in IBM’s **Databases and SQL for Data Science**: relational modeling, `JOIN` / `GROUP BY`, subqueries & CTEs, a first taste of window functions, and a clean **Python ↔ SQL** workflow with reproducible outputs (CSVs + charts).
