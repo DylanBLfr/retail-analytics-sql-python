@@ -1,10 +1,23 @@
-﻿.venv/
+# Python
+.venv/
+venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+
+# Jupyter
 .ipynb_checkpoints/
+
+# DB & local files
 retail.db
-data/processed/*
-*.csv
+
+# Env vars
 .env
+
+# OS junk
 .DS_Store
 Thumbs.db
+desktop.ini
