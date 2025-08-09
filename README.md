@@ -54,11 +54,11 @@ retail-analytics-sql-python/
 
 ## Results (Executive Summary)
 Replace the bracketed parts with what you observe:
-- **Monthly revenue** shows [overall trend, e.g., “growth from Feb→Apr, then stable”].
-- **Top products**: [#1], [#2], [#3] drive most of the revenue.
-- **Revenue by country**: [country A] leads, followed by [country B].
-- **New customers** peaked in [month]; acquisition remains [steady/increasing/declining].
-- **Average Order Value** around **€[value]** with [slight increase/decrease] month over month.
+- **Total revenue (period):** €1 336
+- **Max MoM:** +383% in Mar 2024
+- **Top products:** Laptop 13", Monitor 24", Keyboard
+- **Top country:** US
+- **Average Order Value:** €223
 
 ## How to run (Windows / PowerShell)
 ```powershell
