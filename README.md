@@ -38,22 +38,29 @@ retail-analytics-sql-python/
 
 ```mermaid
 erDiagram
+  CUSTOMERS ||--o{ ORDERS : places
+  ORDERS ||--|{ ORDER_ITEMS : contains
+  PRODUCTS ||--o{ ORDER_ITEMS : includes
+
   CUSTOMERS {
     INT customer_id PK
     DATE signup_date
     TEXT country
   }
+
   PRODUCTS {
     INT product_id PK
     TEXT product_name
     TEXT category
     REAL unit_price
   }
+
   ORDERS {
     INT order_id PK
     INT customer_id FK
     DATE order_date
   }
+
   ORDER_ITEMS {
     INT order_item_id PK
     INT order_id FK
@@ -61,9 +68,7 @@ erDiagram
     INT quantity
     REAL unit_price
   }
-  CUSTOMERS ||--o{ ORDERS : places
-  ORDERS ||--|{ ORDER_ITEMS : contains
-  PRODUCTS ||--o{ ORDER_ITEMS : includes
+
 ```md
 
 ## KPIs implemented
