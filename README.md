@@ -64,6 +64,7 @@ erDiagram
   CUSTOMERS ||--o{ ORDERS : places
   ORDERS ||--|{ ORDER_ITEMS : contains
   PRODUCTS ||--o{ ORDER_ITEMS : includes
+```md
 
 ## KPIs implemented
 1. **Monthly Revenue**  
